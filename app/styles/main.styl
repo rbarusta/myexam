@@ -1,0 +1,140 @@
+
+
+
+vendor-prefixes ?= webkit moz official ms o
+@import 'nib'
+
+img
+   max-width 100%
+
+#home
+  image '../images/fondo_inicio.jpg'
+  	
+
+#menu
+	transition-duration 0.5s
+	position fixed
+	background-color none
+	right:5%
+	top 65px
+
+
+.full
+	padding 10px
+	 
+
+#rec-1,#rec-2,#rec-3,#rec-4,#rec-5,#rec-6,#rec-7,#rec-8
+	  background-color #009688
+	  opacity 0
+	  transition-property opacity
+	  transition-duration 0.5s
+	  width 80%
+	  margin 0 auto
+	  font-size 12px
+	  absolute(top 5%)
+	  z-index 99999
+	  
+
+
+#re-1
+	cursor pointer
+	&:hover
+	    #rec-1
+	    	opacity 0.5
+	    	
+	
+#re-2
+	cursor pointer
+	&:hover
+	    #rec-2
+	    	opacity 0.5
+
+#re-3
+	cursor pointer
+	&:hover
+	    #rec-3
+	    	opacity 0.5
+
+#re-4
+	cursor pointer
+	&:hover
+	    #rec-4
+	    	opacity 0.5
+
+#re-5
+	cursor pointer
+	&:hover
+	    #rec-5
+	    	opacity 0.5
+
+#re-6
+	cursor pointer
+	&:hover
+	    #rec-6
+	    	opacity 0.5
+
+#re-7
+	cursor pointer
+	&:hover
+	    #rec-7
+	    	opacity 0.5
+	
+#re-8
+	cursor pointer
+	&:hover
+	    #rec-8
+	    	opacity 0.5
+
+
+#fondo_serv
+	  image '../images/fondo_serv.jpg'
+	  opacity 0.3
+
+
+.parrafos
+	   line-height 130%
+	   
+.parrafos2
+	     line-height 150%	   
+
+.no
+	display none  	
+
+
+
+.section
+	    width 100%
+	    height 100%
+
+.tope
+	 position fixed
+	 background-color none
+	 right:5%
+	 top 65px
+	 
+
+.caja
+	padding 5px
+	height 250px
+	
+.border-r
+	   border-right solid 2px #EFEBE9	
+			 
+
+
+#inf-con
+	   width 100%			 
+	 
+
+	 
+
+	 
+@media (max-width: 1300px)
+  #barra-navegacion
+  	              display none
+  #menu
+  	  display block
+
+/*@media (min-width: 100px), (min-height: 200px)
+    .foo
+      color: #100*/

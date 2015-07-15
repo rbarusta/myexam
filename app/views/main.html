@@ -1,0 +1,132 @@
+
+  
+  <!-- JQUERY NAV BAR -->
+  <div id="container-nav-div" class="container col-xs-12 container-nav">
+      <nav class="navbar navbar-default menu-onepage" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="nav" class="nav navbar-nav">
+      <li><a href="#onepage-intro">Intro</a></li>
+      <li><a href="#onepage-menu">El menú</a></li>
+      <li><a href="#onepage-secciones">Las secciones</a></li>
+      <li><a href="#onepage-script">Script</a></li>
+      <li><a href="#onepage-adv-script">Script avanzado</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <!-- /jQUERY NAV BAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="container col-xs-12">
+      <div class="row">
+        <div id="onepage-intro" class="section">
+      <h2>Intro</h2>
+      <hr>
+      <p>Una vez más jQuery nos facilita enormemente el desarrollo de páginas web. Con este plugin podrás 
+      crear una página como la de esta demo, con diseño One Page.</p> 
+
+      <p>En Endeos te enseñamos cómo:</p> 
+      <ul>
+        <li><p> - En primer lugar toca plantearse qué secciones quieres en la web</p></li>
+        <li><p> - A continuación se puede crear la estructura del menú de navegación</p></li>
+        <li><p> - El siguiente paso será introducir el contenido de cada sección</p></li>
+        <li><p> - Finalmente, implementaremos la funcionalidad haciendo la llamada al plugin</p></li>
+      </ul>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="onepage-menu" class="section">
+      <h2>El menú</h2>
+      <hr>
+      <p>Definiremos un menú con la siguiente estructura:</p>
+      <blockquote>
+      <p>
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;ul id='nav'&gt;</span> <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;li&gt;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;a href='#apartado-a'&gt;</span>Apartado A<span class="html-code">&lt;/a&gt;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/li&gt;</span> <br/><br/>
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;li&gt;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;a href='#apartado-b'&gt;</span>Apartado B<span class="html-code">&lt;/a&gt;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/li&gt;</span> <br/><br/>
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;li&gt;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;a href='#apartado-c'&gt;</span>Apartado C<span class="html-code">&lt;/a&gt;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/li&gt; </span><br/>
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/ul&gt;</span>
+      <p>
+      </blockquote>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="onepage-secciones" class="section">
+      <h2>Las secciones</h2>
+      <hr>
+      <p>Para las secciones definiremos la siguiente estructura:</p>
+      <blockquote>
+      <p>
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;div class='section' id='apartado-a'&gt;</span> <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Contenido de la sección A<br/>
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/div&gt;</span><br/><br/>
+      
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;div class='section' id='apartado-b'&gt;</span> <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Contenido de la sección B<br/>
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/div&gt;</span><br/><br/>
+      
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;div class='section' id='apartado-c'&gt;</span> <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Contenido de la sección C<br/>
+      &nbsp;&nbsp;&nbsp; <span class="html-code">&lt;/div&gt;</span>
+      </p>
+      </blockquote>
+      <p>Es importante que el atributo 'id' de cada sección coincida con el que hemos puesto en los enlaces del menú.</p>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="onepage-script" class="section">
+      <h2>Script</h2>
+      <hr>
+      <p>La llamada al plugin la haremos en nuestro fichero de funciones javascript de la siguiente manera:</p>
+      <blockquote>
+      <p>
+      &nbsp;&nbsp;&nbsp; $(document).ready(function() {<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $('#nav').onePageNav();<br/>
+      &nbsp;&nbsp;&nbsp; });
+      </p>
+      </blockquote>
+      <p>A llamar a la función debemos indicar el identificador que hemos definido en la etiqueta &lt;ul&gt; del menú.</p>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="onepage-adv-script" class="section">
+      <h2>Script avanzado</h2>
+      <hr>
+      <p>Si necesitamos personalizar el funcionamiento del plugin, podemos pasarle parámetros a la función:</p>
+      <blockquote>
+      <p>
+      &nbsp;&nbsp;&nbsp; $(document).ready(function() {<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $('#nav').onePageNav({<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nombre_parámetro: valor_entero ,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nombre_parámetro: 'valor_string' ,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nombre_parámetro: valor<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br/>
+      &nbsp;&nbsp;&nbsp; });
+      </p>
+      </blockquote>
+      <p>Todos los parámetros están explicados en el post.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /MAIN CONTENT -->

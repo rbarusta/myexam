@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="bower_components/lumx/dist/lumx.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <!--<link rel="stylesheet" href="styles/main.css">-->
+    <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <!-- endbuild -->
+
+    <base href="/">
+  </head>
+  <body ng-app="myexamApp" ng-controller="MainCtrl">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    
+
+    
+    <!--<div class="box" ng-view=""></div>-->
+
+
+  
+  <!-- JQUERY NAV BAR -->
+  <div id="barra-navegacion" class="bgc-green-A700 container col-xs-12 container-nav">
+      <nav class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" flex-align="center center" flex-container="row">
+    <span flex-item="6" class="cursiva">Rich Barusta</span>
+      <ul id="nav"  class="nav navbar-nav fs-display-1 display-block" flex-container="row" flex-align="space-between" flex-item="5">
+      <li><a class="btn btn--m btn--white btn--flat" href="#home" lx-ripple>Inicio</a></li>
+      <li><a lx-ripple class="btn btn--m btn--white btn--flat" href="#acerca">Acerca de nosotros</a></li>
+      <li><a class="btn btn--m btn--white btn--flat" href="#servicios" lx-ripple>Servicios</a></li>
+      <li><a class="btn btn--m btn--white btn--flat" href="#mi-trabajo" lx-ripple>Mi trabajo</a></li>
+      <li><a class="btn btn--m btn--white btn--flat" href="#contacto" lx-ripple>Contacto</a></li>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <div id="menu" class="no">
+  <br><br>
+  
+         <div  class="fab ml">
+                <button class="fab__primary btn btn--xl bgc-green-A700 btn--fab" lx-ripple lx-tooltip="Menu" tooltip-position="left">
+                    <i class="mdi mdi-office"></i>
+                    <i class="mdi mdi-plus"></i>
+                </button>
+
+                <div  class="nav navbar-nav fab__actions fab__actions--down">  
+                <ul id="navi">
+                    <li><a href="#home" class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Inicio" tooltip-position="left"><i class="mdi mdi-home"></i></a></li>
+                    <li><a href="#acerca"  class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Acerca de" tooltip-position="left"><i class="mdi mdi-human"></i></a></li>
+                    <li><a href="#servicios" class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Servicios" tooltip-position="left"><i class="mdi mdi-source-fork"></i></a></li>
+                    <li><a href="#mi-trabajo" class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Mi Trabajo" tooltip-position="left"><i class="mdi mdi-rocket"></i></a></li>
+                   <li> <a href="#contacto" class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Contacto" tooltip-position="left"><i class="mdi mdi-tablet-ipad"></i></a></li>
+                    </ul>
+                </div>
+         </div>
+</div>
+
+</div>
+  <!-- /jQUERY NAV BAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="container col-xs-12">
+      <div class="row">
+        <div id="home" class="section">
+      <h1 align="center" class="tc-white">Esta es la introduccion</h1>
+      <hr>
+      <h2 align="CENTER" class="tc-white">INCIDUNT BORE</h2> 
+      <h3 align="center" class="tc-white">UNA PEQUEÑA INTRODUCCION</h3>
+      <br><br>
+      <p align="center"><a class="btn btn--xl bgc-yellow-500 btn--raised tc-black" href="" lx-ripple>PUSH ME OVER!</a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="acerca" class="section">
+      <h2 align="center" class="tc-green-A700">About me</h2>
+      <hr>
+      <p align="center" class="tc-brown-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ab culpa, vitae! Dicta labore, <span class="tc-brown-600">repudiandae quis ipsa,</span> ratione velit odit quaerat incidunt esse dolores asperiores excepturi enim culpa accusamus cupiditate?</p>
+      <br><br>
+      <section flex-container="row" flex-align="center">
+        <article class="caja border-r" flex-item="3">
+          <p align="center"><i class="tc-green-A700 mdi mdi-apple"></i></p>
+          <h3 align="center" class="tc-brown-600">Aqui un titulo</h3>
+          <p align="center" class="tc-brown-200 fs-body-1 display-block parrafos">estas puede ser una linea, junto con esta, y esta</p>
+
+        </article>
+        <article class="caja border-r" flex-item="3">
+          <p align="center"><i class="tc-green-A700 mdi mdi-playstation"></i></p>
+          <h3 align="center" class="tc-brown-600">Aqui un titulo</h3>
+          <p align="center" class="tc-brown-200 fs-body-1 display-block parrafos">estas puede ser una linea, junto con esta, y esta</p>
+        </article>
+        <article class="caja border-r" flex-item="3">
+          <p align="center"><i class="tc-green-A700 mdi mdi-xbox"></i></p>
+          <h3 align="center" class="tc-brown-600">Aqui un titulo</h3>
+          <p align="center" class="tc-brown-200 fs-body-1 display-block parrafos" >estas puede ser una linea, junto con esta, y esta</p>
+        </article>
+        <article class="caja " flex-item="3">
+          <p align="center"><i class="tc-green-A700 mdi mdi-windows"></i></p>
+          <h3 align="center" class="tc-brown-600">Aqui un titulo</h3>
+          <p align="center" class="tc-brown-200 fs-body-1 display-block parrafos">estas puede ser una linea, junto con esta, y esta</p>
+        </article>
+      </section>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="servicios" class="bgc-amber-100">
+           <section flex-container="row" flex-align="center" >
+             <div flex-item="6" class="relleno"><br><br>
+             <div flex-container="row" flex-align="center"><h2 flex-item="10"  class="tc-green-A700">SERVICES</h2></div>
+               <br><br>
+               <div flex-container="row" flex-align="center"><p flex-item="10" class="tc-brown-200 fs-subhead display-block parrafos2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis sed voluptas voluptate cum eos</p></div>
+                <br>
+                 <section flex-container="row" flex-align="center">
+                   <article flex-item="5" >
+                     <p><i class="mdi mdi-linux tc-green-A700"></i></p>
+                     <h3 class="tc-brown-600" >Un titulo!</h3>
+                     <p class="tc-brown-200 fs-body-1 display-block parrafos">Aqui en esta seccion estare poniendo un parrafo de prueba puede contener varias lineas de texto, esto claropara tratar de llenarlo</p>
+                   </article>
+                   <article flex-item="5" >
+                     <p><i class="mdi mdi-rocket tc-green-A700"></i></p>
+                     <h3 class="tc-brown-600" >Un titulo!</h3>
+                     <p class="tc-brown-200 fs-body-1 display-block parrafos">Aqui en esta seccion estare poniendo un parrafo de prueba puede contener varias lineas de texto, esto claropara tratar de llenarlo</p>
+                   </articleh>
+                 </section><br>
+                 <section flex-container="row" flex-align="center">
+                   <article flex-item="5" >
+                     <p><i class="mdi mdi-linux tc-green-A700"></i></p>
+                     <h3 class="tc-brown-600" >Un titulo!</h3>
+                     <p class="tc-brown-200 fs-body-1 display-block parrafos">Aqui en esta seccion estare poniendo un parrafo de prueba puede contener varias lineas de texto, esto claropara tratar de llenarlo</p>
+                   </article>
+                   <article flex-item="5" >
+                     <p><i class="mdi mdi-linux tc-green-A700"></i></p>
+                     <h3 class="tc-brown-600" >Un titulo!</h3>
+                     <p class="tc-brown-200 fs-body-1 display-block parrafos">Aqui en esta seccion estare poniendo un parrafo de prueba puede contener varias lineas de texto, esto claropara tratar de llenarlo</p>
+                   </article>
+                 </section>
+                 <br>
+                 <br>
+                 <br>
+             </div>
+             <div flex-item="6" id="fondo_serv"></div>
+           </section>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="mi-trabajo" class="section">
+      <h2 align="center" class="tc-green-A700">MY WORK</h2>
+      <hr><br>
+      <p align="center" class="tc-brown-200"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aut, saepe amet ab inventore exercitationem iste illum, consectetur minima, consequuntur, at officiis? Debitis</p><br><br>
+      <section flex-container="row" flex-align="center">
+        <div id="re-1" flex-item="3"><img src="images/comidas/rec1.jpg"><div id="rec-1">Esto se ve muy rico, puede que sean patatas!! o tacos</div></div>
+        <div id="re-2" flex-item="3"><img src="images/comidas/rec2.jpeg"><div id="rec-2">Esto se ve muy rico</div></div>
+        <div id="re-3" flex-item="3"><img src="images/comidas/rec3.jpg"><div id="rec-3">Esto se ve muy rico</div></div>
+        <div id="re-4" flex-item="3"><img src="images/comidas/rec4.jpg"><div id="rec-4">Esto se ve muy rico</div></div>
+      </section>
+      <section flex-container="row" flex-align="center">
+        <div id="re-5" flex-item="3"><img src="images/comidas/rec5.jpg"><div id="rec-5">Esto se ve muy rico</div></div>
+        <div id="re-6" flex-item="3"><img src="images/comidas/rec6.jpg"><div id="rec-6">Esto se ve muy rico</div></div>
+        <div id="re-7" flex-item="3"><img src="images/comidas/rec7.jpg"><div id="rec-7">Esto se ve muy rico</div></div>
+        <div id="re-8" flex-item="3"><img src="images/comidas/rec5.jpg"><div id="rec-8">Esto se ve muy rico</div></div>
+      </section>
+      
+        </div>
+      </div>
+    
+    <div class="row">
+        <div id="contacto" class="section">
+        <div id="sup-con">
+          <h2 align="center" class="tc-green-A700">CONTACT ME</h2>
+          <hr><br>
+          <p align="center" class="tc-grey-800">Si necesitamos personalizar el funcionamiento del plugin, podemos pasarle parámetros a la función:</p><br>
+          <p class="tc-grey-800" align="center">Esto nos puede llevar a algo grandioso!</p><br>
+        </div>
+        <div id="inf-con" class="bgc-grey-800 mt++ p++ pt0">
+            <lx-text-field label="NAME" class="tc-white" theme="dark">
+                <input type="text" ng-model="contacto.name">
+            </lx-text-field>
+            <lx-text-field label="EMAIL ADDRESS" theme="dark">
+                <input type="email" ng-model="contacto.email">
+            </lx-text-field>
+            <lx-text-field label="MESSAGE" theme="dark">
+                <input type="text" ng-model="contacto.mes">
+            </lx-text-field><br><br>
+            <p align="center"><button ng-click="enviar()" class="btn btn--xl bgc-yellow-500 btn--raised tc-black">SUBMIT</button></p>
+          
+        </div>
+
+      
+        </div>
+      </div>
+    </div>
+    <!-- /MAIN CONTENT -->
+    
+
+    
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
+    <script src="bower_components/velocity/velocity.ui.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/lumx/dist/lumx.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/navbar.js"></script>
+        <script src="scripts/run-navbar.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
